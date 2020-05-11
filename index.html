@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+           <div class="jumbotron row d-flex flex-row">
+               <div class="col-md-6 wrap d-flex flex-column mb-4">
+                   <h1 class="h1 text-center">Канкулятор расходов</h1>
+                   <div class="row ">
+                       <div class="col-sm-12 col-md-12">
+                           <div class="balans-container mt-4 mb-4 border border-info p-4 shadow bg-white rounded">
+                               <h4 class="h4">Введите ваши заработанные деньги</h4>
+                               <input type="number" id="balans" class="">
+                               <button class="add-balans btn btn-info">Добавить</button>
+                           </div>
+                       </div>
+                       <div class="col-sm-12 col-md-12">
+                           <div class="buy-block border border-info p-4 shadow bg-white rounded">
+                               <h4 class="h4">Введите то что вы купили</h4>
+                               <input type="text" id="buys">
+                               <h4 class="h4 mt-4 ">Введите стоимость этого</h4>
+                               <input type="number" id="price">
+                           </div>
+                       </div>
+                       <div class="col-sm-12 col-md-12">
+                           <div class="btn-submit d-flex justify-content-center mt-4">
+                               <button class="submit btn btn-info">Расчитать</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="wrap-list col-md-6">
+                   <h2 class="h1 text-center">Список расходов</h2>
+                   <div class="wrap-list-total shadow bg-white rounded d-flex justify-content-around pt-3 pb-3">
+                        
+                        <span>Баланс: <span class="total-balanse text-success">0 $</span></span>
+                        <span>Потрачено: <span class="total-minus text-danger">0 $</span></span>
+                   </div>
+                   <div class="list mt-4 border border-info p-4 shadow bg-white rounded">
+                        <ul class="list-items pl-0">
+                          
+                            
+                        </ul>
+                   </div>
+               </div>
+           </div>
+           
+        </div>
+        <!-- /.container -->
+    </main>
+    <script  src="./index.js"></script>
+    <!-- <script type="module" src="./components/listItemElement.js"></script> -->
+</body>
+</html>
