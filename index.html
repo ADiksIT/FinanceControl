@@ -40,8 +40,9 @@
                    <h2 class="h1 text-center">Список расходов</h2>
                    <div class="wrap-list-total shadow bg-white rounded d-flex justify-content-around pt-3 pb-3">
                         
-                        <span>Баланс: <span class="total-balanse text-success">0 $</span></span>
+                        <span>Заработано: <span class="total-balanse text-success">0 $</span></span>
                         <span>Потрачено: <span class="total-minus text-danger">0 $</span></span>
+                        <span>Всего: <span class="total-summ text-black">0 $</span></span>
                    </div>
                    <div class="list mt-4 border border-info p-4 shadow bg-white rounded">
                         <ul class="list-items pl-0">
@@ -54,8 +55,32 @@
            
         </div>
         <!-- /.container -->
+        <div class="modals hide">
+            <div class="modals__edit shadow bg-white rounded">
+                <h4 class="modals__title">Введите новое название</h4>
+                <input type="text" class="modals__expense">
+                <h4 class="modals__title">Введите новою цену</h4>
+                <input type="text" class="modals__amount">
+                <div class="modals__buttons d-flex justify-content-between">
+                    <button class="modals__submit btn btn-success">Редактировать</button>
+                    <button class="modals__close btn btn-danger">Отмена</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="modals-yes hide">
+            <div class="modals-yes__main shadow bg-white rounded">
+                <h2 class="h2">Вы уверены?</h2>
+                <div class="modals-yes__buttons">
+                    <button class="modals-yes__ok btn btn-success">Да</button>
+                    <button class="modals-yes__no btn btn-danger">Нет</button>
+                </div>
+                
+            </div>  
+        </div>
     </main>
-    <script  src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
     <!-- <script type="module" src="./components/listItemElement.js"></script> -->
 </body>
 </html>
